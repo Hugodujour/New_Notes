@@ -11,10 +11,10 @@ function Main({activeNote, onUpdateNote}) {
     })
   }
 
-  if(!activeNote) return <div className="no-active-note">No note</div>
+  if(!activeNote) return <div className="no-active-note">No note Selected :(</div>
 
   return (
-    <div className='app-name'>
+    <div className='app-main'>
 
       <div className='app-main-note-edit'>
         <input type='text' id='title' value={activeNote.title} onChange={(e) => onEditField('title', e.target.value)} autoFocus />
